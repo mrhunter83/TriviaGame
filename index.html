@@ -1,8 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Trivia Game</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="assets/javascript/app.js"></script>
+	<style type="text/css">
+		.margins {
+			margin-bottom: 30px;
+		}
+		.centerText {
+			text-align: center;
+		}
+		#answer1,#answer2,#answer3,#answer4,#answer5 {}
+		#startbtn {}
+		#questionbox {}
+		body{
+			background-image: url("assets/images/Rick and Morty.jpg");
+		}
+		h1,h2 {
+			color: white;
+		}
+	</style>
 </head>
 <body>
+	<div class="container-fluid">
+		<div class="" style="margin-top: 30px">
+			<div class="container centerText">
+				<img src="assets/images/Rick_and_Morty_logo.png">
+			</div>
+			<div class="centerText container">
+				<h1>Trivia Game!</h1>
+				<button id="startbtn" type="button" class="btn btn-lg btn-primary">Start Game</button>
+			</div>
+		</div>
+
+		<div class="col-md-12 margins"> 
+			<h2 class="centerText"> Time Remaining: Countdown Displays Here</h2>
+		</div>
+		<div class="col-md-12 margins"> <h2 id="questionbox" class="centerText">QUESTIONS HERE</h2> </div>
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<ul class="list-group">
+				<li class="list-group-item" id="answer1"><input type="radio" aria-label="..."> </li>
+				<li class="list-group-item" id="answer2"><input type="radio" aria-label="..."> </li>
+				<li class="list-group-item" id="answer3"><input type="radio" aria-label="..."> </li>
+				<li class="list-group-item" id="answer4"><input type="radio" aria-label="..."> </li>
+				<li class="list-group-item" id="answer5"><input type="radio" aria-label="..."> </li>
+			</ul>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
 </body>
 </html>
