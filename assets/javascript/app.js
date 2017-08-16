@@ -85,7 +85,7 @@ $(document).ready(function(){
 			stopcountdown();
 			counter = 20;
 			$("#answerbox").text("Time's Up! The Correct answer is " + rightAnswers[j] + ".");
-			answerInterval = setInterval(clearAnswer, 2000);
+			answerInterval = setInterval(clearAnswer, 4000);
 		};
 	}
 
@@ -138,12 +138,12 @@ $(document).ready(function(){
 		if (selections[j] === rightAnswers[j]) {
 			$("#answerbox").text("That's Correct!");
 			correctanswers++;
-			answerInterval = setInterval(clearAnswer, 2000);
+			answerInterval = setInterval(clearAnswer, 4000);
 		}
 		else if (selections[j] !== rightAnswers[j]) {
-			$("#answerbox").text("That's Incorrect!");
+			$("#answerbox").text("That's Incorrect! The correct answer is " + rightAnswers[j]);
 			incorrectanswers++;
-			answerInterval = setInterval(clearAnswer, 2000);
+			answerInterval = setInterval(clearAnswer, 4000);
 		}
 	})
 	$(".choice2").on('click', function() {
@@ -153,12 +153,12 @@ $(document).ready(function(){
 		if (selections[j] === rightAnswers[j]) {
 			$("#answerbox").text("That's Correct!");
 			correctanswers++;
-			answerInterval = setInterval(clearAnswer, 2000);
+			answerInterval = setInterval(clearAnswer, 4000);
 		}
 		else if (selections[j] !== rightAnswers[j]) {
-			$("#answerbox").text("That's Incorrect!");
+			$("#answerbox").text("That's Incorrect! The correct answer is " + rightAnswers[j]);
 			incorrectanswers++;
-			answerInterval = setInterval(clearAnswer, 2000);
+			answerInterval = setInterval(clearAnswer, 4000);
 		}
 	})
 	$(".choice3").on('click', function() {
@@ -168,12 +168,12 @@ $(document).ready(function(){
 		if (selections[j] === rightAnswers[j]) {
 			$("#answerbox").text("That's Correct!");
 			correctanswers++;
-			answerInterval = setInterval(clearAnswer, 2000);
+			answerInterval = setInterval(clearAnswer, 4000);
 		}
 		else if (selections[j] !== rightAnswers[j]) {
-			$("#answerbox").text("That's Incorrect!");
+			$("#answerbox").text("That's Incorrect! The correct answer is " + rightAnswers[j]);
 			incorrectanswers++;
-			answerInterval = setInterval(clearAnswer, 2000);
+			answerInterval = setInterval(clearAnswer, 4000);
 		}
 	})
 	$(".choice4").on('click', function() {
@@ -183,12 +183,12 @@ $(document).ready(function(){
 		if (selections[j] === rightAnswers[j]) {
 			$("#answerbox").text("That's Correct!");
 			correctanswers++;
-			answerInterval = setInterval(clearAnswer, 2000);
+			answerInterval = setInterval(clearAnswer, 4000);
 		}
 		else if (selections[j] !== rightAnswers[j]) {
-			$("#answerbox").text("That's Incorrect!");
+			$("#answerbox").text("That's Incorrect! The correct answer is " + rightAnswers[j]);
 			incorrectanswers++;
-			answerInterval = setInterval(clearAnswer, 2000);
+			answerInterval = setInterval(clearAnswer, 4000);
 		}
 	})
 }
